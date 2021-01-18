@@ -1,0 +1,25 @@
+mysql> desc users;
++-------------------+---------------------+------+-----+---------+----------------+
+| Field             | Type                | Null | Key | Default | Extra          |
++-------------------+---------------------+------+-----+---------+----------------+
+| id                | bigint(20) unsigned | NO   | PRI | NULL    | auto_increment |
+| name              | varchar(191)        | NO   |     | NULL    |                |
+| email             | varchar(191)        | NO   | UNI | NULL    |                |
+| email_verified_at | timestamp           | YES  |     | NULL    |                |
+| password          | varchar(191)        | NO   |     | NULL    |                |
+| remember_token    | varchar(100)        | YES  |     | NULL    |                |
+| created_at        | timestamp           | YES  |     | NULL    |                |
+| updated_at        | timestamp           | YES  |     | NULL    |                |
++-------------------+---------------------+------+-----+---------+----------------+
+
+mysql> desc todos;
++------------+---------------------+------+-----+---------+----------------+
+| Field      | Type                | Null | Key | Default | Extra          |
++------------+---------------------+------+-----+---------+----------------+
+| id         | bigint(20) unsigned | NO   | PRI | NULL    | auto_increment |
+| todo       | varchar(191)        | NO   |     | NULL    |                |
+| deadline   | date                | NO   |     | NULL    |                |
+| comment    | text                | YES  |     | NULL    |                |
+| created_at | timestamp           | YES  |     | NULL    |                |
+| updated_at | timestamp           | YES  |     | NULL    |                |
++------------+---------------------+------+-----+---------+----------------+
